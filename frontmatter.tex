@@ -1,0 +1,58 @@
+\documentclass[10pt]{article}
+\usepackage{fontspec}                
+\setmainfont{Ibarra Real Nova}[
+    Path=/Users/max/Library/Fonts/, % Path to your font files
+    UprightFont=IbarraRealNova-Regular.ttf,
+    BoldFont=IbarraRealNova-Bold.ttf,
+    ItalicFont=IbarraRealNova-Italic.ttf,
+    BoldItalicFont=IbarraRealNova-BoldItalic.ttf
+]
+
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{bbding}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplotstable}
+\usepackage{csvsimple}
+\usepackage{etoolbox}
+\usepackage{gensymb}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{indentfirst}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{chemfig}
+\usepackage{mhchem}
+\usepackage{lastpage}
+\keepXColumns
+\usepackage{multicol}
+\usepackage[autostyle]{csquotes}
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+\pgfplotsset{compat=1.18}
+\usepackage[backend=biber,style=mla]{biblatex}
+\addbibresource{History ia.bib}
+
+
+\graphicspath{{images/}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\pretocmd{\appendix}{%
+    \titleformat{\section}{\large\bfseries}{Appendix \thesection:}{0.5em}{}[\titlerule] % Adds the colon after "Appendix A"
+}{}{}
+\titlespacing*{\paragraph}{0pt}{1ex plus 1ex minus .2ex}{0pt}
+\titlespacing*{\paragraph}{0pt}{1ex plus 1ex minus .2ex}{1ex}
+
+\titleformat{\paragraph}[block]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}[]
+\setlength{\parindent}{1em} % Adjust the indentation width
